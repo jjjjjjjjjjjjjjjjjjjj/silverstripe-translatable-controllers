@@ -18,7 +18,7 @@ interface TranslatableController {
      * [
      *      'fråga',
      *      '質問',
-     *      _t('Controller.URL_SEGMENT')
+     *      _t('Controller.URL_SEGMENT', 'some_controller_name')
      *  ]
      * </code>
      *
