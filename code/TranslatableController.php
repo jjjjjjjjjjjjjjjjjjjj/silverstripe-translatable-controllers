@@ -6,7 +6,7 @@
  * and plural name of your controller to map to it.
  *
  * @author      Janne Klouman <janne@klouman.com>
- * @package     TranslatableController
+ * @package     TranslatableControllers
  */
 interface TranslatableController {
 

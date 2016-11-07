@@ -4,7 +4,7 @@
  * Mock controller used for functional testing.
  *
  * @author      Janne Klouman <janne@klouman.com>
- * @package     TranslatableController
+ * @package     TranslatableControllers
  */
 class MockTranslatableController extends Controller implements TranslatableController
 {
@@ -78,4 +78,5 @@ class MockTranslatableController extends Controller implements TranslatableContr
     {
         return self::TEST_ONE_RETURN;
     }
+    
 }

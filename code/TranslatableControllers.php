@@ -4,7 +4,7 @@
  * Core functions for making controllers and actions translatable.
  *
  * @author      Janne Klouman <janne@klouman.com>
- * @package     TranslatableController
+ * @package     TranslatableControllers
  */
 class TranslatableControllers
 {
@@ -64,4 +64,5 @@ class TranslatableControllers
 
         return isset($controller);
     }
+    
 }
