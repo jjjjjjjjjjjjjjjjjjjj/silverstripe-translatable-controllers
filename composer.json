@@ -1,0 +1,25 @@
+{
+  "name": "janneklouman/silverstripe-translatable-controllers",
+  "description": "An interface to allow simple translation of controller url segments and actions.",
+  "license": "BSD-3-Clause",
+  "type": "silverstripe-module",
+  "keywords": [
+    "silverstripe",
+    "translatable",
+    "translatable controller"
+  ],
+  "authors": [
+    {
+      "name": "Janne Klouman",
+      "email": "janne@klouman.com",
+      "homepage": "http://github.com/janneklouman"
+    }
+  ],
+  "support": {
+    "issues": "https://waffle.io/janneklouman/silverstripe-translatable-controllers"
+  },
+  "require": {
+    "php": ">=5.4",
+    "silverstripe/framework": "^3.1"
+  }
+}
