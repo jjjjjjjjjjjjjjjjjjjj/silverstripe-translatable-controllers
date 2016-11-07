@@ -16,10 +16,10 @@ This module provides a simple interface that allows you to set up multiple route
 
 ## Basic usage example
 The following example provides a simple controller (`ExampleController`) with one function (`example_function`), available from:
-* `example.com/ExampleController/example_function` (by default)
-* `example.com/example_example/function_function` (by static definition)
-* `example.com/exempelcontroller/exempelfunktion` (when the locale is Swedish. Defined by `_t()`)
-* `example.com/コントローラーの例/関数の例` (when the locale is Japanese. Defined by `_t()`)
+* `example.com/ExampleController/example_function` 
+* `example.com/example_example/function_function` 
+* `example.com/exempelcontroller/exempelfunktion` (when the locale is Swedish)
+* `example.com/コントローラーの例/関数の例` (when the locale is Japanese)
 
 Make your controller implement the [`TranslatableController`](https://github.com/janneklouman/silverstripe-translatable-controllers/blob/master/code/TranslatableController.php) interface:
 
