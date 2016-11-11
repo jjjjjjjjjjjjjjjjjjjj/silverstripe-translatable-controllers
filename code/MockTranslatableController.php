@@ -13,7 +13,7 @@ class MockTranslatableController extends Controller implements TranslatableContr
     const TEST_ONE_RETURN   = 1;
     
     /**
-     * @var array
+     * @var     array   List of allowed controller actions.
      */
     private static $allowed_actions = [
         'one',
@@ -50,6 +50,8 @@ class MockTranslatableController extends Controller implements TranslatableContr
     }
 
     /**
+     * Returns the string "index".
+     *
      * @return  string
      */
     public function index()

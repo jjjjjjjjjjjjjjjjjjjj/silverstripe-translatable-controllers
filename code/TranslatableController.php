@@ -16,12 +16,10 @@ interface TranslatableController {
      * Example of valid return:
      * <code>
      * [
-     *      'fråga',
-     *      'frågor',
-     *      'spørsmål',
-     *      'question',
-     *      'questions',
-     *      '質問'
+     *      'question-controller',
+     *      '質問',
+     *      _t('ExampleController.URL_SEGMENT_SINGULAR', 'question'),
+     *      _t('ExampleController.URL_SEGMENT_PLURAL', 'questions'),
      *  ]
      * </code>
      *
@@ -37,14 +35,9 @@ interface TranslatableController {
      * <code>
      * [
      *      'view' => 'view',
-     *      'visa' => 'view',
      *      '見る' => 'view',
-     *      'edit//$UUID' => 'edit',
-     *      'redigera//$UUID' => 'edit',
-     *      '変更//$UUID' => 'edit',
-     *      'delete//$UUID//$Recurse' => 'delete',
-     *      'ta-bort//$UUID//$Recurse' => 'delete',
-     *      '消す//$UUID//$Recurse' => 'delete',
+     *      '消す//$UUID/$Recurse' => 'delete',
+     *      _t('ExampleController.DELETE_ACTION', 'delete') . '//$UUID/$Recurse' => 'delete',
      *  ]
      * </code>
      *

@@ -22,13 +22,17 @@ class TranslatableControllers
         $controllers = ClassInfo::implementorsOf($interface);
         $routes      = [];
 
+        // For each controller that implements the TranslatableController interface...
         foreach ($controllers as $controller) {
+
+            // ... collect routes (url segments) defined on the controller.
             $controllerRoutes = singleton($controller)->getValidUrlSegments();
             foreach ($controllerRoutes as $route) {
                 $routes[$route . '//$Action/$ID/$OtherID'] = $controller;
             }
         }
 
+        // Apply all routes that come from implementors of TranslatableController to the config.
         if (count($routes)) {
             Config::inst()->update(
                 Director::class,
@@ -55,7 +59,10 @@ class TranslatableControllers
         $interface   = TranslatableController::class;
         $controllers = ClassInfo::implementorsOf($interface);
 
+        // For each controller that implements the TranslatableController interface...
         foreach ($controllers as $controller) {
+            
+            // ... add extension if the controller has defined valid url handlers.
             $urlHandlers = singleton($controller)->getValidUrlHandlers();
             if (is_array($urlHandlers) && count($urlHandlers)) {
                 $controller::add_extension('TranslatableControllerExtension');

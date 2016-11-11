@@ -19,7 +19,7 @@ class TranslatableControllersTest extends FunctionalTest {
         $this->assertEquals(
             MockTranslatableController::TEST_INDEX_RETURN,
             $alternateRouteBody,
-            '/mock-controller/ route hits ' . MockTranslatableController::class
+            '/mock-controller/ route hits MockTranslatableController'
         );
 
         $translatedRoute = _t('MockTranslatableController.CONTROLLER_URL', '日本語でも動いています');
@@ -27,7 +27,7 @@ class TranslatableControllersTest extends FunctionalTest {
         $this->assertEquals(
             MockTranslatableController::TEST_INDEX_RETURN,
             $translatedRouteBody,
-            '/' . $translatedRoute .'/ route hits '. MockTranslatableController::class
+            '/' . $translatedRoute .'/ route hits MockTranslatableController'
         );
 
     }
@@ -37,7 +37,7 @@ class TranslatableControllersTest extends FunctionalTest {
      */
     public function testUrlHandlers() 
     {
-        $mockController = singleton(MockTranslatableController::class);
+        $mockController = singleton('MockTranslatableController');
         $urlSegments    = $mockController->getValidUrlSegments();
 
         foreach($urlSegments as $urlSegment) {
