@@ -12,7 +12,7 @@ This module provides a simple interface that allows you to set up multiple route
 ```
 
 ## Installation
-`composer install janneklouman/silverstripe-translatable-controllers`
+`composer install jjjjjjjjjjjjjjjjjjjj/silverstripe-translatable-controllers`
 
 ## Basic usage example
 The following example provides a simple controller (`ExampleController`) with one function (`example_function`), available from:
